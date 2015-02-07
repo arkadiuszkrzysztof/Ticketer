@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LoginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.ticketer.activity.UserDashboard">
+    
+    	
+        <TextView
+	       android:id="@+id/smartShorts"
+	       style="@style/SmartShorts"
+	       android:layout_width="wrap_content"
+	       android:layout_height="100dp"
+	       android:layout_alignParentLeft="true"
+	       android:layout_alignParentRight="true"
+	       android:layout_alignParentTop="true"
+	       android:text="@string/empty_string" 
+	       android:visibility="visible"/>
+	   
+	   <TextView
+	       android:id="@+id/greeter"
+	       style="@style/Greeter"
+	       android:layout_width="200dp"
+	       android:layout_height="40dp"
+	       android:layout_alignLeft="@+id/smartShorts"
+	       android:layout_alignBottom="@+id/smartShorts"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginBottom="55dp"
+	       android:contentDescription="@string/empty_string"/>
+	   
+	   <TextView
+	       android:id="@+id/dateTime"
+	       style="@style/DateTime"
+	       android:layout_width="80dp"
+	       android:layout_height="40dp"
+	       android:layout_alignRight="@+id/smartShorts"
+	       android:layout_alignBottom="@+id/smartShorts"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginBottom="55dp"
+	       android:contentDescription="@string/empty_string"/>
+	   
+	   	<ImageView
+	        android:id="@+id/smartHome"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/smartShorts"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/home63" 
+	        android:contentDescription="@string/image_resource" 
+	        android:visibility="gone"/>
+	
+	    <ImageView
+	        android:id="@+id/smartEvents"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/smartShorts"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/smartHome"
+	        android:src="@drawable/calendar146"  
+	        android:contentDescription="@string/image_resource"
+	        android:visibility="gone"/>
+	
+	    <ImageView
+	        android:id="@+id/smartValidate"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/smartShorts"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/smartEvents"
+	        android:contentDescription="@string/image_resource"
+	        android:src="@drawable/done"  
+	        android:visibility="gone"/>
+	    
+	    <ImageView
+	        android:id="@+id/smartSettings"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/smartShorts"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/smartValidate"
+	        android:contentDescription="@string/image_resource"
+	        android:src="@drawable/tools3"  
+	        android:visibility="gone"/>
+	
+	    <ImageView
+	        android:id="@+id/smartLogout"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignBottom="@+id/smartShorts"
+	        android:layout_alignRight="@+id/smartShorts"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginRight="10dp"
+	        android:contentDescription="@string/image_resource"
+	        android:src="@drawable/log"  
+	        android:visibility="gone"/>
+	   
+    
+    
+    <TextView
+        android:id="@+id/statusBar"
+        style="@style/StatusBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/smartShorts"
+        android:text="@string/empty_string" />
+
+    <ImageView
+        android:id="@+id/ticketerLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/statusBar"
+        android:layout_alignTop="@+id/statusBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ticket_1000_white" 
+        android:contentDescription="@string/image_resource"/>
+
+    <ImageView
+        android:id="@+id/userPrompt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/statusBar"
+        android:layout_alignTop="@+id/statusBar"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/user168" 
+        android:contentDescription="@string/image_resource"
+        android:onClick="userIconAction"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TicketerGray">#E1E1E1</color>
+    <color name="TicketerBlue">#3264C8</color>
+    <color name="TicketerOrange">#FFB62B</color>
+    <color name="TicketerRed">#C84E4E</color>
+    <color name="TicketerGreen">#5E9148</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
